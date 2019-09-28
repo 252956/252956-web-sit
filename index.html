@@ -1,205 +1,237 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Vue-Link-Admin</title>
-<meta name="description" content="">
+  <meta name="generator" content="Hexo 3.8.0">
+  <title>Vue-Link-Admin</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Vue-Link-Admin - 企业级后台系统框架">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<link rel="stylesheet" href="/web-site/assets/css/main.css" />
+  <!-- main page styles -->
+  <link rel="stylesheet" href="/assets/css/index.css">
+
+
+  <!-- this needs to be loaded before guide's inline scripts -->
+
+  <script src="/assets/js/vue.js"></script>
+  <script>
+    Vue.config.productionTip = false
+    window.PAGE_TYPE = ""
+  </script>
+
+
 </head>
-<body>
-	<div id="app" data-server-rendered="true">
-		<div class="theme-container no-sidebar">
-			<div id="codefund" class="home-codefund"></div>
-			<header class="navbar">
-				<div class="sidebar-button">
-					<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-						role="img" viewBox="0 0 448 512" class="icon">
-						<path fill="currentColor"
-							d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg>
-				</div>
-				<a href="https://252956.github.io/web-site/"
-					class="home-link router-link-exact-active router-link-active">
-					<!----> <span class="site-name">Vue-Link-Admin</span>
-				</a>
-				<div class="links" style="max-width: nullpx;">
-					<nav class="nav-links can-hide">
-					<div class="nav-item">
-							<a href="/web-site/webpage.html"
-								class="nav-link">预览</a>
-						</div>
 
-						<div class="nav-item">
-							<div class="dropdown-wrapper">
-								<a class="dropdown-title"><span class="title">生态系统</span> <span
-									class="arrow right"></span></a>
-								<ul class="nav-dropdown" style="display: none;">
-									<li class="dropdown-item"><h4>项目</h4>
-										<ul class="dropdown-subitem-wrapper">
-											<li class="dropdown-subitem"><a
-												href="https://github.com/252956/vue-link-admin"
-												target="_blank" rel="noopener noreferrer"
-												class="nav-link external"> Vue-Link-Admin <svg
-														xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-														x="0px" y="0px" viewBox="0 0 100 100" width="15"
-														height="15" class="icon outbound">
-														<path fill="currentColor"
-															d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
-															fill="currentColor"
-															points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li>
-											<li class="dropdown-subitem"><a
-												href="https://github.com/252956/springboot-link-admin"
-												target="_blank" rel="noopener noreferrer"
-												class="nav-link external"> springboot-link-admin <svg
-														xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-														x="0px" y="0px" viewBox="0 0 100 100" width="15"
-														height="15" class="icon outbound">
-														<path fill="currentColor"
-															d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
-															fill="currentColor"
-															points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li>
-											<li class="dropdown-subitem"><a
-												href="https://github.com/252956/link-tool-pom"
-												target="_blank" rel="noopener noreferrer"
-												class="nav-link external"> link-tool-pom <svg
-														xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-														x="0px" y="0px" viewBox="0 0 100 100" width="15"
-														height="15" class="icon outbound">
-														<path fill="currentColor"
-															d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
-															fill="currentColor"
-															points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li>
+<body class="">
+  <div id="mobile-bar" class="top">
+    <span class="menu-button-svg">
+      <svg t="1569637876878" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="2026" width="24" height="24">
+        <path d="M0 144.848175l1024 0 0 33.940554-1024 0 0-33.940554Z" p-id="2027"></path>
+        <path d="M0 492.181962l1024 0 0 33.961227-1024 0 0-33.961227Z" p-id="2028"></path>
+        <path d="M0 845.15442l1024 0 0 33.997406-1024 0 0-33.997406Z" p-id="2029"></path>
+      </svg>
+
+    </span>
+
+    <span class="menu-button">
 
 
-											<li class="dropdown-item"><h4>帮助</h4>
-												<ul class="dropdown-subitem-wrapper">
+    </span>
+    <a class="logo" href="/">Vue-Link-Admin</a>
+
+  </div>
+  <div id="header">
+    <a id="logo" href="/">
+      <!--<img src="/images/logo.png" alt="vue logo">-->
+      <span>Vue-Link-Admin</span>
+    </a>
+    <ul id="nav">
+      <li>
+        <a href="/pages/webpage.html" class="nav-link">预览</a>
+      </li>
+      <li class="nav-dropdown-container learn">
+        <a class="nav-link">生态系统</a><span class="arrow"></span>
+        <ul class="nav-dropdown">
+          <li>
+            <h4>项目</h4>
+          </li>
+          <li>
+            <ul>
+              <li><a href="https://github.com/252956/vue-link-admin" target="_blank" class="nav-link external">
+                  vue-link-admin </a></li>
+              <li><a href="https://github.com/252956/springboot-link-admin" target="_blank" class="nav-link external">
+                  springboot-link-admin</a></li>
+              <li><a href="https://github.com/252956/link-tool-pom" target="_blank" class="nav-link external">
+                  link-tool-pom</a></li>
+
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+      <li class="nav-dropdown-container ecosystem">
+        <a class="nav-link">学习</a><span class="arrow"></span>
+        <ul class="nav-dropdown">
+          <li>
+            <h4>教程</h4>
+          </li>
+          <li>
+            <ul>
+              <li><a href="https://github.com/252956/springcloud" target="_blank" rel="noopener noreferrer"
+                  class="nav-link external">
+                  springcloud</a></li>
+              <li><a href="https://github.com/252956/link-datastructure" target="_blank" rel="noopener noreferrer"
+                  class="nav-link external"> datastructure </a></li>
+              <li><a href="https://github.com/252956/link-cpp" target="_blank" rel="noopener noreferrer"
+                  class="nav-link external"> cpp</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="/pages/donate.html" class="nav-link ">捐赠</a>
+      </li>
+      <li><a href="https://github.com/252956/vue-link-admin" target="_blank" rel="noopener noreferrer"
+          class="repo-link">
+          GitHub</a></li>
+
+    </ul>
+  </div>
 
 
-													<li class="dropdown-subitem"><a href="#"
-														target="_blank" rel="noopener noreferrer"
-														class="nav-link external"> ... <svg
-																xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-																x="0px" y="0px" viewBox="0 0 100 100" width="15"
-																height="15" class="icon outbound">
-														<path fill="currentColor"
-																	d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
-																	fill="currentColor"
-																	points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li>
-												</ul></li>
-										</ul>
-							</div>
-						</div>
-						<div class="nav-item">
-							<div class="dropdown-wrapper">
-								<a class="dropdown-title"><span class="title">学习</span> <span
-									class="arrow right"></span></a>
-								<ul class="nav-dropdown" style="display: none;">
-									<li class="dropdown-item"><h4>教程</h4>
-										<ul class="dropdown-subitem-wrapper">
-											<li class="dropdown-subitem"><a
-												href="https://github.com/252956/springcloud" target="_blank"
-												rel="noopener noreferrer" class="nav-link external">
-													springcloud <svg xmlns="http://www.w3.org/2000/svg"
-														aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100"
-														width="15" height="15" class="icon outbound">
-														<path fill="currentColor"
-															d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
-															fill="currentColor"
-															points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg>
-											</a></li>
-											<li class="dropdown-subitem"><a
-												href="https://github.com/252956/link-datastructure"
-												target="_blank" rel="noopener noreferrer"
-												class="nav-link external"> datastructure <svg
-														xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-														x="0px" y="0px" viewBox="0 0 100 100" width="15"
-														height="15" class="icon outbound">
-														<path fill="currentColor"
-															d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
-															fill="currentColor"
-															points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg>
-											</a></li>
-											<li class="dropdown-subitem"><a
-												href="https://github.com/252956/link-cpp" target="_blank"
-												rel="noopener noreferrer" class="nav-link external"> cpp
-													<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-														x="0px" y="0px" viewBox="0 0 100 100" width="15"
-														height="15" class="icon outbound">
-														<path fill="currentColor"
-															d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
-															fill="currentColor"
-															points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg>
-											</a></li>
+  <div class="sidebar">
+    <div class="sidebar-inner-index">
+      <ul class="main-menu">
+        <li>
+          <a href="/pages/webpage.html" class="nav-link">预览</a>
+        </li>
+        <li class="nav-dropdown-container learn">
+          <a class="nav-link">生态系统</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            <li>
+              <h4>项目</h4>
+            </li>
+            <li>
+              <ul>
+                <li><a href="https://github.com/252956/vue-link-admin" target="_blank" class="nav-link external">
+                    vue-link-admin </a></li>
+                <li><a href="https://github.com/252956/springboot-link-admin" target="_blank" class="nav-link external">
+                    springboot-link-admin</a></li>
+                <li><a href="https://github.com/252956/link-tool-pom" target="_blank" class="nav-link external">
+                    link-tool-pom</a></li>
+
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-dropdown-container ecosystem">
+          <a class="nav-link">学习</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            <li>
+              <h4>教程</h4>
+            </li>
+            <li>
+              <ul>
+                <li><a href="https://github.com/252956/springcloud" target="_blank" rel="noopener noreferrer"
+                    class="nav-link external">
+                    springcloud</a></li>
+                <li><a href="https://github.com/252956/link-datastructure" target="_blank" rel="noopener noreferrer"
+                    class="nav-link external"> datastructure </a></li>
+                <li><a href="https://github.com/252956/link-cpp" target="_blank" rel="noopener noreferrer"
+                    class="nav-link external"> cpp</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="/pages/donate.html" class="nav-link">捐赠</a>
+        </li>
+        <li><a href="https://github.com/252956/vue-link-admin" target="_blank" class="nav-link">
+            GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
 
-										</ul>
-							</div>
-						</div>
-                          <div class="nav-item">
-							<a href="/web-site/pages/donate.html"
-								class="nav-link">捐赠</a>
-						</div>
-
-						<a href="https://github.com/252956/vue-link-admin"
-							target="_blank" rel="noopener noreferrer" class="repo-link">
-							GitHub <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-								x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"
-								class="icon outbound">
-								<path fill="currentColor"
-									d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
-									fill="currentColor"
-									points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg>
-						</a>
-					</nav>
-				</div>
-			</header>
+  <div id="home">
+    <div id="hero">
+      <div class="inner">
 
 
-			<div class="home">
-				<div class="hero">
-					<h1>vue-link-admin</h1>
-					<p class="description"></p>
-					<p class="action">
-						<a href="https://github.com/252956/vue-link-admin"
-							class="nav-link action-button">快速上手 →</a>
-					</p>
-				</div>
-				<div class="features isCN">
-					<div class="feature">
-						<h2>快速开发</h2>
-						<p>提供了项目的基础框架，便于快速开发</p>
-					</div>
-					<div class="feature">
-						<h2>前后端分离</h2>
-						<p>前端vue-link-admin</p>
-						<p>后端springboot-link-admin</p>
-					</div>
-					<div class="feature">
-						<h2>最新技术栈</h2>
-						<p>前端 vue/vuex/vue-router/element</p>
-						<p>后端 springboot/redis/mysql</p>
-					</div>
-					
-					<div class="feature">
-						<h2>权限验证</h2>
-						<p>根据权限动态加载路由，渲染侧边栏，页面按钮</p>
-					</div>
-					<div class="feature">
-						<h2>安全验证</h2>
-						<p>根据url动态验证请求合法性</p>
-					</div>
-					<div class="feature">
-						<h2>主题</h2>
-						<p>支持多种动态换肤功能</p>
-					</div>
-				</div>
-				<div class="content custom"></div>
-				<div class="footer">252956</div>
-			</div>
-			<!---->
-		</div>
-	</div>
+        <h2 class="vue">Vue-Link-Admin</h2>
+        <h1>
+          企业级<br>系统基础框架
+        </h1>
+        <p>
+
+          <a class="button white" href="https://github.com/252956/vue-link-admin">快速上手</a>
+          <!--<a class="button gray has-icon" href="https://github.com/252956/vue-link-admin" target="_blank">
+          <svg aria-labelledby="simpleicons-github-dark-icon" lang="" role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-github-icon" lang="en">GitHub Dark icon</title><path fill="#7F8C8D" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+
+          GITHUB</a>-->
+        </p>
+      </div>
+
+    </div>
+
+
+
+    <div id="highlights">
+      <div class="inner">
+        <div class="point">
+          <h2>快速开发</h2>
+          <p>提供了项目的基础框架，便于快速开发</p>
+        </div>
+
+        <div class="point">
+          <h2>前后端分离</h2>
+          <p>前端vue-link-admin</p>
+          <p>后端springboot-link-admin</p>
+        </div>
+
+        <div class="point">
+          <h2>最新技术栈</h2>
+          <p>前端 vue/vuex/vue-router/element</p>
+          <p>后端 springboot/redis/mysql</p>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="point">
+          <h2>权限验证</h2>
+          <p>根据权限动态加载路由，渲染侧边栏，页面按钮</p>
+        </div>
+
+        <div class="point">
+          <h2>安全验证</h2>
+          <p>根据url动态验证请求合法性</p>
+        </div>
+
+        <div class="point">
+          <h2>主题</h2>
+          <p>支持多种动态换肤功能</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div id="footer" class="footer">252956</div>
+
+
+  <!-- main custom script for sidebars, version selects etc. -->
+  <script src="/assets/js/css.escape.js"></script>
+  <script src="/assets/js/common.js"></script>
+
+
 </body>
+
 </html>
